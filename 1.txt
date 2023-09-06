@@ -1,1 +1,33 @@
-hi hello
+student@manisha:~/Desktop/gitcom$ git branch
+* branch1
+  master
+student@manisha:~/Desktop/gitcom$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+student@manisha:~/Desktop/gitcom$ git branch -d branch1
+warning: deleting branch 'branch1' that has been merged to
+         'refs/remotes/origin/branch1', but not yet merged to HEAD.
+Deleted branch branch1 (was 8f270ca).
+student@manisha:~/Desktop/gitcom$ git branch
+* master
+student@manisha:~/Desktop/gitcom$ git checkout branch1
+Branch 'branch1' set up to track remote branch 'branch1' from 'origin'.
+Switched to a new branch 'branch1'
+student@manisha:~/Desktop/gitcom$ git branch -d branch1
+error: Cannot delete branch 'branch1' checked out at '/home/student/Desktop/gitcom'
+student@manisha:~/Desktop/gitcom$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+student@manisha:~/Desktop/gitcom$ git branch -d branch1
+warning: deleting branch 'branch1' that has been merged to
+         'refs/remotes/origin/branch1', but not yet merged to HEAD.
+Deleted branch branch1 (was 8f270ca).
+student@manisha:~/Desktop/gitcom$ git branch
+* master
+student@manisha:~/Desktop/gitcom$ git checkout manisha
+error: pathspec 'manisha' did not match any file(s) known to git.
+student@manisha:~/Desktop/gitcom$  script branch
+Script started, file is branch
+student@manisha:~/Desktop/gitcom$ exit
+Script done, file is branch
+student@manisha:~/Desktop/gitcom$ 
