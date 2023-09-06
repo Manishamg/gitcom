@@ -1,1 +1,2 @@
+changes have to be observed while doing stash 
 this is to check the stashing process
